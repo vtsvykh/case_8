@@ -21,7 +21,14 @@ with open('booking.txt', 'r', encoding='utf-8') as book_base:
         Hotel.clients[f'{surname} {name} {patronymic}'] = book_inst
 
 
-for day in range(1, 3):
+for day in range(1, 5):
     print(f'{day:02d}.03.2022')
+
+    today_orders = Hotel.get_today_orders(day)
+
+    for order in today_orders:
+
+
+
 
 
